@@ -239,8 +239,13 @@ table.lb tbody tr:nth-child(3) td.rk{color:#9a3412}
 @media (max-width:980px){
   /* storyboards: once the three steps stack, keep each step's box, caption and AWS card together */
   .sbg>.pn:nth-child(1){order:1}.sbg>.cap:nth-child(6){order:2}.sbg>.lane-c:nth-child(12){order:3}
-  .sbg>.pn:nth-child(3){order:4}.sbg>.cap:nth-child(8){order:5}.sbg>.lane-c:nth-child(14){order:6}
-  .sbg>.pn:nth-child(5){order:7}.sbg>.cap:nth-child(10){order:8}.sbg>.lane-c:nth-child(16){order:9}
+  .sbg>.sb-arrow:nth-child(2){order:4}
+  .sbg>.pn:nth-child(3){order:5}.sbg>.cap:nth-child(8){order:6}.sbg>.lane-c:nth-child(14){order:7}
+  .sbg>.sb-arrow:nth-child(4){order:8}
+  .sbg>.pn:nth-child(5){order:9}.sbg>.cap:nth-child(10){order:10}.sbg>.lane-c:nth-child(16){order:11}
+  /* the arrows between steps point down once the steps stack */
+  .sbg>.sb-arrow{display:flex!important;justify-content:center;align-items:center;height:28px;margin:-6px 0 4px;font-size:22px;line-height:1;color:var(--accent)}
+  .sbg>.sb-arrow{transform:rotate(90deg)}
   .sbg>.lane-h{display:none}
   .sbg>.cap{margin-top:-2px}
   .sbg>.lane-c{margin-bottom:18px}
